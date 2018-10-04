@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Battleships!</title>
+    <meta name="author" content="Jean-François Feugere, Gabriel Grégoire">
+    <meta name="description" content="Site édutiant du jeu de Battleships">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+<audio preload="none" id="explosion" src="sons/explosion.wav"></audio>
+<audio preload="none" id="splash" src="sons/splash.wav"></audio>
+<audio preload="none" id="victory" src="sons/victory.wav"></audio>
+<header>
+</header>
+<div id="wrapper">
+    <div id="menu">
+        <button id="facile" class="bouton_menu">Facile</button>
+        <button id="moyen" class="bouton_menu">Moyen</button>
+        <button id="difficile" class="bouton_menu">Difficile</button>
+    </div>
+    <div id="contenu" >
+        <div id="tuto" class="contenu">
+            <h1></h1>
+            <h2>Bienvenu sur notre jeu de bataille navale</h2>
+            <p>1) Sélectionner votre niveau de difficulté <br><br>
+                * Facile : Grille de 8x8 cases et 5 bateaux<br>
+                (2 destroyer, 1 sous-marin et 2 navires patrouille)<br><br>
+                * Moyen : Grille de 10x10 cases et 8 bateaux<br>
+                (1 porte-avion, 3 destroyers, 2 sous-marins et 2 navires patrouille)<br><br>
+                * Difficile : Grille de 12x12 cases et 12 bateaux<br>
+                (2 porte-avions, 3 destroyers, 3 sous-marins et 4 navires patrouille)
+            </p>
+            <p>2) Trouver et couler tous les bateaux<br><br>
+                *Vous gagnez 500 points si vous touchez<br>
+                *Vous perdez 100 points si vous ratez<br>
+            </p>
+            <p> Appuyez sur espace pour mettre le jeu en pause <br>
+            </p>
+            <p>
+                <br>Bonne chance !!
+            </p>
+        </div>
+        <div id="enemy" class="contenu">
+            <p>Score : <span id="score"></span><br>
+                Nombre de bateaux coulés : <span id="nbCoule"></span><br>
+                Nombre de bateaux restants : <span id="nbRestant"></span></p>
+        </div>
+    </div>
+    <div id="battleship">
+
+    </div>
+    <div id="reinit">
+        <button id="reset">Réinitialiser</button>
+    </div>
+    <div id="victoire" class="lightbox hidden">
+    </div>
+    <div id="pause" class="lightbox hidden">
+    </div>
+</div>
+</body>
+<script src="http://mrdoob.github.com/three.js/build/three.min.js"></script>
+<script src="script/main.js"></script>
+<script src="script/fonctions.js"></script>
+<script src="script/events.js"></script>
+</html>

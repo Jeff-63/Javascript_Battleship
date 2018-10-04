@@ -1,0 +1,79 @@
+body {
+    background-image: url("../images/battleship.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1%;
+}
+
+.contenu {
+    background-image: url("../images/bgcontenu.jpg");
+    opacity: 0.8;
+    color: white;
+    width: 30%;
+    text-align: center;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+#wrapper {
+	font-size: 100%;
+    margin-top: 5%;
+}
+
+#enemy {
+    font-size: 110%;
+    border-radius: 30%;
+}
+
+#menu {
+    margin-right: 6%;
+    text-align: right;
+}
+
+.bouton_menu {
+    width: 150px;
+    height: 25px;
+    display: inline-block;
+    border-bottom-color: black;
+    border-right-color: black;
+}
+
+#contenu {
+    margin-left: 10%;
+    margin-top: 7%;
+}
+
+#reinit {
+    margin-top: 1%;
+    margin-left: 20%;
+}
+
+#battleship {
+    position: fixed;
+    left: 50%;
+    top: 21%;
+    background-image: url("../images/radar.gif");
+    background-repeat: no-repeat;
+    background-size: 185%;
+    background-position: center;
+}
+
+.lightbox {
+    padding-top: 5%;
+    outline: none;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.hidden {
+
+    display: none;
+}
